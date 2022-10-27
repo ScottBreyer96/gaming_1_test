@@ -1,15 +1,15 @@
 import {Link} from 'react-router-dom'
-import RankingArray from "../components/ranking/Ranking-array";
+import ScoreArray from "../components/score/ScoreArray";
 import React, {Component} from "react";
-import '../styles/home.css'
+import '../styles/score.css'
 
-class Home extends Component {
+class Score extends Component {
 
     render() {
         return (
             <div className='home-container'>
                 <div className='home-title'>SCORES</div>
-                <RankingArray></RankingArray>
+                <ScoreArray></ScoreArray>
                 <Link to="/game">
                     <button className='new-game-button'>New game</button>
                 </Link>
@@ -17,4 +17,4 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default Score;

@@ -4,7 +4,7 @@ type Props = {
     score: number,
 };
 
-export default class ScoreEntering extends React.Component<Props, { value: string }> {
+export default class GameScoreEntering extends React.Component<Props, { value: string }> {
 
     constructor(props: any) {
         super(props);
@@ -16,15 +16,15 @@ export default class ScoreEntering extends React.Component<Props, { value: strin
     };
 
     handleSubmit() {
-        const ok = localStorage.getItem('gaming_1.score');
-        if (ok == null) {
+        const localStorageItems = localStorage.getItem('gaming_1.score');
+        if (localStorageItems == null) {
             localStorage.setItem('gaming_1.score', JSON.stringify([{name: this.state.value, score: this.props.score}]));
         } else {
-            const scoreList = JSON.parse(ok);
+            const scoreList = JSON.parse(localStorageItems);
             scoreList.push({name: this.state.value, score: this.props.score})
             localStorage.setItem('gaming_1.score', JSON.stringify(scoreList));
         }
-        window.location.href = '/home';
+        window.location.href = '/score';
     }
 
     render() {

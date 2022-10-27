@@ -2,7 +2,7 @@ import React from "react";
 import {Component} from "react";
 import Target from "../../interfaces/Target";
 import '../../styles/game.css'
-import ScoreEntering from "./ScoreEntering";
+import GameScoreEntering from "./GameScoreEntering";
 
 class GameBoard extends Component {
 
@@ -40,16 +40,10 @@ class GameBoard extends Component {
         }
     }
 
-    endGame() {
-        //TODO endgame
-        this.isEndGame = true;
-        //window.location.href = '/'
-    }
-
     initGameTimer() {
         setTimeout(() => {
-            this.endGame();
-        }, 10000)
+            this.isEndGame = true;
+        }, 120000)
     }
 
     initTargetVisibleTimer(target: Target) {
@@ -87,7 +81,7 @@ class GameBoard extends Component {
     render() {
         return (
             this.isEndGame ?
-                <ScoreEntering score={this.score}></ScoreEntering>
+                <GameScoreEntering score={this.score}></GameScoreEntering>
                 :
                 <div>
                     <div className='score-container'>

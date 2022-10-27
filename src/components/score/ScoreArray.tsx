@@ -3,7 +3,7 @@ import {Component} from "react";
 import Scoring from "./Scoring";
 import User from "../../interfaces/User";
 
-class RankingArray extends Component {
+class ScoreArray extends Component {
 
     users: User[] = [];
 
@@ -41,5 +41,5 @@ class RankingArray extends Component {
     }
 }
 
-export default RankingArray;
+export default ScoreArray;
 
