@@ -1,0 +1,52 @@
+.home-container {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-title {
+    color: #ffb700;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.ranking-array-container {
+    margin-top: 50px;
+    width: 50%;
+}
+
+.scoring-user-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+.scoring-user-name {
+    width: 50%;
+    color: #ff7300;
+    font-size: 36px;
+}
+
+.scoring-user-score {
+    width: 50%;
+    color: #ff2f00;
+    font-size: 32px;
+}
+
+.new-game-button {
+    margin-top: 50px;
+    background-color: #ffb700;
+    color: red;
+    border: 2px solid red;
+    padding: 5px;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.new-game-button:hover {
+    cursor: pointer;
+}

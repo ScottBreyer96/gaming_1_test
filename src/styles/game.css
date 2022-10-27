@@ -1,0 +1,90 @@
+.game-board {
+  display: flex;
+  flex-wrap: wrap;
+  cursor: url(../assets/WAM_Hammer.png)50 50,pointer;
+}
+
+.target-container {
+  width: 25%;
+  height: 175px;
+  text-align: center;
+  display: flex;
+  justify-content: center
+}
+
+.hidden-target {
+  align-self: flex-end;
+  content:  url(../assets/WAM_Hole.png);
+}
+.visible-target {
+  align-self: flex-end;
+  content: url(../assets/WAM_Mole.png);
+}
+
+.score-container {
+  margin: 40px 0 0 40px;
+}
+
+.score-title {
+  font-size: 48px;
+  font-weight: 600;
+  color: Red;
+}
+
+.score-value {
+  font-size: 36px;
+  font-weight: 400;
+  color: Red;
+}
+
+.score-entering-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10%;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.score-entering-title {
+  margin-top: 50px;
+  font-size: 48px;
+  color: red;
+  font-weight: 500;
+}
+
+.score-entering-score {
+  margin-top: 10px;
+  font-size: 36px;
+  color: red;
+  font-weight: 500;
+}
+
+.score-entering-form-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.score-entering-form-input {
+  border: 2px solid red;
+  border-radius: 10px;
+  margin-bottom: 2px;
+  height: 25px;
+  font-size: 20px;
+}
+
+.score-entering-form-button {
+  margin-left: 10px;
+  background-color: #ffb700;
+  color: red;
+  border: 2px solid red;
+  padding: 5px;
+  font-weight: 400;
+  font-size: 24px;
+  border-radius: 10px;
+}
+
+.score-entering-form-button:hover {
+  cursor: pointer;
+}
