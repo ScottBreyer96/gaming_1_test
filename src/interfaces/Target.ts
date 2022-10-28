@@ -1,5 +1,4 @@
 interface Target {
-    index: number;
     visible: boolean
 }
 

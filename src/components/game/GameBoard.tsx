@@ -9,18 +9,18 @@ class GameBoard extends Component {
     score: number = 0;
     isEndGame = false;
     targets: Target[] = [
-        {index: 0, visible: false},
-        {index: 1, visible: false},
-        {index: 2, visible: false},
-        {index: 3, visible: false},
-        {index: 4, visible: false},
-        {index: 5, visible: false},
-        {index: 6, visible: false},
-        {index: 7, visible: false},
-        {index: 8, visible: false},
-        {index: 9, visible: false},
-        {index: 10, visible: false},
-        {index: 11, visible: false}
+        {visible: false},
+        {visible: false},
+        {visible: false},
+        {visible: false},
+        {visible: false},
+        {visible: false},
+        {visible: false},
+        {visible: false},
+        {visible: false},
+        {visible: false},
+        {visible: false},
+        {visible: false}
     ];
 
     constructor(props: any) {
@@ -71,7 +71,7 @@ class GameBoard extends Component {
     }
 
     renderTargets() {
-        return this.targets.map((target, index) => (
+        return this.targets.map((target) => (
             <div className='target-container'>
                 <img className={target.visible ? 'visible-target' : 'hidden-target'} onClick={() => this.targetClicked(target)}></img>
             </div>
